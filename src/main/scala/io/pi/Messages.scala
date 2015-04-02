@@ -10,7 +10,7 @@ object Messages {
   case class Measurement( timestamp : Long, datapoint : Double, uom : String )
 
   // from server
-  case class HealthCheck( serverAddress : String )
+  case class HealthCheck( serverAddress : URI )
   case class ServerError( msg : String )
 
 }

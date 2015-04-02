@@ -44,9 +44,11 @@
 
 
     <logger name="akka.io.TcpListener" level="DEBUG" />
+    <logger name="io.pi.applog" level="DEBUG" />
 
-    <logger name="io.pi" level="INFO" additivity="false">
+    <logger name="io.pi.datalog" level="INFO" additivity="false">
         <appender-ref ref="DATAFILE"/>
+        <appender-ref ref="CONSOLE"/>
     </logger>
 
     <root level="DEBUG">
