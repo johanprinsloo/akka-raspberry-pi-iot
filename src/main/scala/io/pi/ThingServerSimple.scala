@@ -18,7 +18,7 @@ class ThingServerSimple extends Actor {
   val applog = Logging(context.system, "io.pi.applog")
   val datalog = LoggerFactory.getLogger("io.pi.datalog")
 
-  applog.info("STAAART")
+  applog.info("SERVER START")
 
   /**
    * Message receive loop
